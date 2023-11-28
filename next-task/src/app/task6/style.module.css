@@ -1,0 +1,17 @@
+.dark {
+    background-color: black;
+    height: 100vh;
+}
+
+.ligth {
+    background-color: white;
+    height: 100vh;
+}
+
+.darkP {
+    background-color: white;
+}
+
+.ligthP {
+    background-color: black;
+}
