@@ -1,5 +1,5 @@
 'use client'
-import Client from './cient'
+import Client from './client'
 
 import input from './input/Input'
 export default function Task11() {
