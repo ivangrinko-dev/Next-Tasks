@@ -1,22 +1,21 @@
-'use client'
-import Client from './client'
+import Link from "next/link";
+import Client from "./client";
+import Input from "./input";
 
-import input from './input/Input'
-export default function Task11() {
-function isShow(){
-    alert('hi')
+export default function Task12() {
+  return (
+    <>
+      <p>
+        12. Реализуйте два компонента (серверный, клиентский). Первый –
+        input.js, второй – page.js. input.js содержит статичный input. Страница
+        page.js содержит форму из двух компонентов Input.js и кнопки, по нажатию
+        на которую появляется alert с сообщением ‘click’.
+      </p>
+
+      <Client Input={Input}></Client>
+      <p>
+        <Link href="/">back</Link>
+      </p>
+    </>
+  );
 }
-
-
-    return(
-        <>
-        <p>Реализуйте два компонента (серверный, клиентский). Первый – input.js, второй –
-page.js. input.js содержит статичный input. Страница page.js содержит форму из
-двух компонентов Input.js и кнопки, по нажатию на которую появляется alert с
-сообщением ‘click</p>
-    <input type="text" />
-    <input type="text" />
-    <button onClick={isShow}>click</button>
-        </>
-    )
-    }

@@ -1,13 +1,15 @@
-'use client'
+'use client';
 
-export default function Client() {
-    function isShow(){
-        alert('hi')
+export default function Client({Input}) {
+    function isShow() {
+        alert("Hi")
     }
-
     return (
-      <>
-        <input type="text" />
-      </>
-    );
-  }
+        <>
+            <Input></Input>
+            <Input></Input>
+
+            <button onClick={isShow}>Click11</button>            
+        </>
+    )
+}
